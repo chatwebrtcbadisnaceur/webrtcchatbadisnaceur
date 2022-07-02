@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "PROD=true nodemon server.js"
+    "dev": "PROD=true nodemon server.js",
+    "postinstall": "cd .. && npm install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.17.1",
     "nodemon": "^2.0.7",
     "socket.io": "^3.1.1"
